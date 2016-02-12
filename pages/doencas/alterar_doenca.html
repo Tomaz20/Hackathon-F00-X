@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>GAMu - Gestor de Audições Musicais</title>
+    <title>Alterar Dados</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../../startbootstrap/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,21 +17,15 @@
     <!-- MetisMenu CSS -->
     <link href="../../startbootstrap/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
-    <!-- DataTables CSS -->
-    <link href="../../startbootstrap/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
-    <link href="../../startbootstrap/bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="../../startbootstrap/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../../startbootstrap/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	
-    <script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="scripts/listar_alunos.js"></script>
 
+	<script type="application/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="scripts/alterar_doenca.js"></script>
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -54,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Listar Alunos</a>
+                <div class="navbar-brand">Alterar Dados</div>
             </div>
             <!-- /.navbar-header -->
 
@@ -76,61 +70,65 @@
                             <a href="../../index.html"><i class="fa fa-dashboard fa-fw"></i> Página Inicial</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-group fa-fw"></i> Alunos<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-group fa-fw"></i> Doenças<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../alunos/listar_alunos.html">Listar</a>
+                                    <a href="../doencas/listar_doencas.html">Listar</a>
                                 </li>
                                 <li>
-                                    <a href="../alunos/inserir_aluno.html">Inserir</a>
+                                    <a href="../doencas/pesquisar_doencas.html">Pesquisar</a>
+                                </li>
+                                <li>
+                                    <a href="../doencas/inserir_doenca.html">Inserir (mantem-se?)</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
+                        <!--
                         <li>
                             <a href="#"><i class="fa fa-group fa-fw"></i> Professores<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../professores/listar_professores.html">Listar</a>
+                                    <a href="pages/professores/listar_professores.html">Listar</a>
                                 </li>
                                 <li>
-                                    <a href="../professores/inserir_professor.html">Inserir</a>
+                                    <a href="pages/professores/inserir_professor.html">Inserir</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
+                            <!-- /.nav-second-level --
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-book fa-fw"></i> Cursos<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../cursos/listar_cursos.html">Listar</a>
+                                    <a href="pages/cursos/listar_cursos.html">Listar</a>
                                 </li>
                                 <li>
-                                    <a href="../cursos/inserir_curso.html">Inserir</a>
+                                    <a href="pages/cursos/inserir_curso.html">Inserir</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
+                            <!-- /.nav-second-level --
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-file-text fa-fw"></i> Obras<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../obras/listar_obras.html">Listar</a>
+                                    <a href="pages/obras/listar_obras.html">Listar</a>
                                 </li>
                                 <li>
-                                    <a href="../obras/inserir_obra.html">Inserir</a>
+                                    <a href="pages/obras/inserir_obra.html">Inserir</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
+                            <!-- /.nav-second-level --
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-music fa-fw"></i> Audições<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="../audicoes/listar_audicoes.html">Listar</a>
+                                    <a href="pages/audicoes/listar_audicoes.html">Listar</a>
                                 </li>
                                 <li>
-                                    <a href="../audicoes/inserir_audicao.html">Inserir</a>
+                                    <a href="pages/audicoes/inserir_audicao.html">Inserir</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -145,7 +143,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Alunos</h1>
+                    <h1 class="page-header">Alterar Dados</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -153,10 +151,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
-                        <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div class="dataTable_wrapper" id="tab_alunos">
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade active in" id="single">
+                                    <div class="col-lg-6">
+                                    <form role="form" action="scripts/alterar_doenca.php" method="get" id="doenca_form">
+										<fieldset id="doenca">
+											
+										</fieldset>
+										<button type="submit" class="btn btn-default">Alterar</button>
+                                    </form>
+                                </div>
+                                </div>
                             </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -164,6 +174,7 @@
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
+            <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
 
@@ -179,21 +190,8 @@
     <!-- Metis Menu Plugin JavaScript -->
     <script src="../../startbootstrap/bower_components/metisMenu/dist/metisMenu.min.js"></script>
 
-    <!-- DataTables JavaScript -->
-    <script src="../../startbootstrap/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-    <script src="../../startbootstrap/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="../../startbootstrap/dist/js/sb-admin-2.js"></script>
-
-    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
-    <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-                responsive: true
-        });
-    });
-    </script>
 
 </body>
 
