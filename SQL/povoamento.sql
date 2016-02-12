@@ -9,9 +9,14 @@ insert into doenca(idDoenca,nomeDoenca,categoria)
 		   (21,'Hipotiroidismo','Hormonal'),(22,'HIV','Viral'),(23,'Impotência','Sexual'),(24,'Leucemia','Sanguineo'),(25,'Meningite','Nervoso'),(26,'Osteoporose','Ossea'),
 		   (27,'Parkinson','Neuronal'),(28,'Prostatite','Inflamatoria'),(29,'Sarampo','Viral'),(30,'Sífilis','Bacteriana'),(31,'Sinusite','Inflamatoria'),(32,'Tétano','Infecciosa'),
 		   (33,'Transtorno dissociativo de identidade','Mental'),(34,'Doença de Fabry','Genetica'),(35,'Síndrome de Doege-Potter','Tomoral'),
-		   (36,'Síndrome de Von Hippel-Lindau','Genetica'),(37,'VVVVVVVV',''),(38,'Síndrome de Munchausen','Mental'),(39,'Sexsomnia','Mental'),
-           (40,'Zika','Viral'),(41,'DengueVEEERR',''),(42,'Hepatite','Hepatica'),(43,'Amigdalite','Inflamacao'),(44,'Otite','Inflamatoria ');
+		   (36,'Síndrome de Von Hippel-Lindau','Genetica'),(37,'Pneumonia',''),(38,'Síndrome de Munchausen','Mental'),(39,'Sexsomnia','Mental'),
+           (40,'Zika','Viral'),(41,'Doenca Cardiaca','Cardiovascular'),(42,'Hepatite','Hepatica'),(43,'Amigdalite','Inflamacao'),(44,'Otite','Inflamatoria ');
 		   
 select * from doenca;
 
+insert into causa(idCausa,designacao,descricao)
+		values(1,'Tumor  maligno que se desenvolve na mama como consequência alterações genéticas num conjunto de 
+        células na mama, que se dividem descontroladamente'),(2,'Gastroenterite Inflamação aguda que compromete os orgãos do sistema gastrointestinal',''),
+        (3,'Hepatite Qualquer degeneração do fígado por causas diversas, principalmente pelos vírus do tipo A, B e C e abuso de cosumo de álcool ou outras substâncias','');
 
+insert into doenca_causa()

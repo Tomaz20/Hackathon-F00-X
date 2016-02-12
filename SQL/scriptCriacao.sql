@@ -18,9 +18,9 @@ USE `hackathon` ;
 -- Table `hackathon`.`Doenca`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `hackathon`.`Doenca` (
-  `id_doenca` INT NOT NULL AUTO_INCREMENT,
-  `nome_doenca` VARCHAR(100) NOT NULL,
-  `categoria` VARCHAR(45) NOT NULL,
+  `id_doenca` INT NOT NULL,
+  `nome` VARCHAR(100) NOT NULL,
+  `categoria` VARCHAR(75) NOT NULL,
   PRIMARY KEY (`id_doenca`))
 ENGINE = InnoDB;
 
@@ -29,8 +29,8 @@ ENGINE = InnoDB;
 -- Table `hackathon`.`Sintoma`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `hackathon`.`Sintoma` (
-  `id_sintoma` INT NOT NULL AUTO_INCREMENT,
-  `nome_sintoma` VARCHAR(45) NOT NULL,
+  `id_sintoma` INT NOT NULL,
+  `nome` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`id_sintoma`))
 ENGINE = InnoDB;
 
@@ -58,14 +58,12 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `hackathon`.`Medicamento`
+-- Table `hackathon`.`Prevencao`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `hackathon`.`Medicamento` (
-  `id_medicamento` INT NOT NULL,
-  `nome_medicamento` VARCHAR(45) NOT NULL,
-  `tipo` VARCHAR(45) NOT NULL,
-  `teceita` TINYINT(1) NOT NULL,
-  PRIMARY KEY (`id_medicamento`))
+CREATE TABLE IF NOT EXISTS `hackathon`.`Prevencao` (
+  `id_prevencao` INT NOT NULL,
+  `descricao` TEXT NOT NULL,
+  PRIMARY KEY (`id_prevencao`))
 ENGINE = InnoDB;
 
 
@@ -85,7 +83,7 @@ CREATE TABLE IF NOT EXISTS `hackathon`.`Doenca_Medicamento` (
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Doenca_has_Medicamento_Medicamento1`
     FOREIGN KEY (`medicamento`)
-    REFERENCES `hackathon`.`Medicamento` (`id_medicamento`)
+    REFERENCES `hackathon`.`Prevencao` (`id_prevencao`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -95,9 +93,9 @@ ENGINE = InnoDB;
 -- Table `hackathon`.`Tratamento`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `hackathon`.`Tratamento` (
-  `idTratamento` INT NOT NULL AUTO_INCREMENT,
-  `descricao_tratamento` TEXT NOT NULL,
-  PRIMARY KEY (`idTratamento`))
+  `id_Tratamento` INT NOT NULL,
+  `descricao` TEXT NOT NULL,
+  PRIMARY KEY (`id_Tratamento`))
 ENGINE = InnoDB;
 
 
@@ -117,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `hackathon`.`Doenca_Tratamento` (
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Doenca_has_Tratamento_Tratamento1`
     FOREIGN KEY (`tratamento`)
-    REFERENCES `hackathon`.`Tratamento` (`idTratamento`)
+    REFERENCES `hackathon`.`Tratamento` (`id_Tratamento`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -127,10 +125,9 @@ ENGINE = InnoDB;
 -- Table `hackathon`.`Causa`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `hackathon`.`Causa` (
-  `idCausa` INT NOT NULL,
+  `id_Causa` INT NOT NULL,
   `designacao` TEXT NOT NULL,
-  `descricao` TEXT NOT NULL,
-  PRIMARY KEY (`idCausa`))
+  PRIMARY KEY (`id_Causa`))
 ENGINE = InnoDB;
 
 
@@ -150,7 +147,7 @@ CREATE TABLE IF NOT EXISTS `hackathon`.`Doenca_Causa` (
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_Doenca_has_Causa_Causa1`
     FOREIGN KEY (`causa`)
-    REFERENCES `hackathon`.`Causa` (`idCausa`)
+    REFERENCES `hackathon`.`Causa` (`id_Causa`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
