@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="Audicao" page-height="297mm" page-width="210mm"><fo:region-body region-name="corpo" margin="2cm"/></fo:simple-page-master></fo:layout-master-set></fo:root>
