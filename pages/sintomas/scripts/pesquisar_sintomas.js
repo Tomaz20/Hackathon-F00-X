@@ -2,7 +2,7 @@ $(function(){
 	var nsintomas=0;
 
 
-	$("#lista_sintomas").load("scripts/lista_sintomas.php");
+	$("#sintomas0").load("scripts/lista_sintomas.php");
 
 	$("#addsintoma").click(function(){
 		
@@ -22,9 +22,9 @@ $(function(){
 		var selectSint = document.createElement('select');
 		
 		selectSint.setAttribute("class", "form-control");
-		selectSint.setAttribute("name", "sintoma[" + nsintomas + "]");
+		selectSint.setAttribute("id", "sintomas"+nsintomas);
 		
-		var options = $("#lista_sintomas > option").clone();
+		var options = $("#sintomas0 > option").clone();
 		
 		$(selectSint).append(options);
 		
@@ -43,7 +43,13 @@ $(function(){
 		}
 	}); 
 
-	$("#remsintoma").click(function(){
-		$("#tab_doencas").load("scripts/pesquisa_sintomas.php?ns="+nsintomas);
+	$("#pesquisar").click(function(){
+		var sints="&sintoma0="+document.getElementById("sintomas0").value;
+
+		for(var i=1;i<=nsintomas;i++){
+			sints = sints+"&sintoma"+i+"="+document.getElementById("sintomas"+i).value;
+		}
+
+		$("#tab_doencass").load("scripts/pesquisa_sintomas.php?ns="+nsintomas+sints);
 	});
 }); 

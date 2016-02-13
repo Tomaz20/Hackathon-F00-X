@@ -4,7 +4,7 @@
 
 
 	$qstring = "SELECT * FROM Doenca WHERE id_doenca = ".$_REQUEST['id'];
-	$atuacao = $dbh->query($qstring);
+	$doenca = $dbh->query($qstring)->fetch();
 
 
 	$qstring = "SELECT * FROM Sintoma AS s
@@ -37,21 +37,19 @@
 
 	echo "<p><b>Designação:</b> ".$doenca['nome']."</p><hr/>";
 
-	echo "<hr/>";
 	
 	echo "<p><b>Categoria:</b> ".$doenca['categoria']."</p><hr/>";
 
-	echo "<hr/>";
 
 	echo "<p><b>Sintomas:</b></p>";
 
 	echo "<ul>";
 
 	while ($sintoma = $sintomas->fetch()){
-		echo "<li>".$sintoma['designacao']."</li>";
+		echo "<li>".$sintoma['nome']."</li>";
 	}
 
-	echo "<\ul>";
+	echo "</ul>";
 	
 	echo "<hr/>";
 
