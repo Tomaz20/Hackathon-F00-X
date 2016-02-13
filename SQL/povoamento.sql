@@ -6,7 +6,7 @@ insert into doenca(id_doenca,nome,categoria)
 		(4,'Anorexia','Mental'),(5,'Asma','Respiratorio'),(6,'Botulismo','Estomago'),(7,'Bronquite Aguda','Pulmoes'),
         (8,'Cirrose','Hepatica'),(9,'Cancro da Mama','Ocologica'),(10,'Cancro da Prostata','Ocologica'),
 		(11,'Cistite','Urinaria'),(12,'Dengue','Viral'),(13,'Diabetes','Matabolica'),
-        (14,'Ejaculação Precoce','Urinario'),(15,'Esclerose Múltipla','Inflmatoria'),
+        (14,'Ejaculação Precoce','Urinaria'),(15,'Esclerose Múltipla','Inflmatoria'),
 		(16,'Febre Reumática','Inflamatoria '),(17,'Glaucoma','Ocular'),(18,'Gripe','Viral'),
         (19,'Hepatite','Viral'),(20,'Hipertensão','Vascular'),(21,'Hipotiroidismo','Hormonal'),
         (22,'HIV','Viral'),(23,'Impotência','Sexual'),(24,'Leucemia','Sanguineo'),(25,'Meningite','Nervoso'),
@@ -15,8 +15,9 @@ insert into doenca(id_doenca,nome,categoria)
 		(33,'Transtorno dissociativo de identidade','Mental'),(34,'Doença de Fabry','Genetica'),
         (35,'Síndrome de Doege-Potter','Tomoral'),(36,'Síndrome de Von Hippel-Lindau','Genetica'),
         (37,'Pneumonia','yuy'),(38,'Síndrome de Munchausen','Mental'),(39,'Sexsomnia','Mental'),
-		(40,'Zika','Viral'),(41,'Doenca Cardiaca','Cardiovascular'),(42,'Hepatite','Hepatica'),
-        (43,'Amigdalite','Inflamacao'),(44,'Otite','Inflamatoria'),(45,'Gastroenterite','Inflamação');
+		(40,'Zika','Viral'),(41,'Doenca Cardiaca','Cardiovascular'),(42,'Pneumonia','Pulmonar'),
+        (43,'Amigdalite','Inflamacao'),(44,'Otite','Inflamatoria'),(45,'Gastroenterite','Inflamação')
+        (46,'Cálculo Biliar','Digestiva'),(47,'Cálculo Renal','Urinaria'),(48,'Hérnia','Muscular'),(49,'Anemia','Sanguineo'),(50,'Enxaqueca','neurologico'),(51,'Febre Tifóide','Bacteriana'),(52,'Poliomielite','Nervosa');
 		   
 -- delete from doenca;
 insert into causa(id_Causa,designacao)
