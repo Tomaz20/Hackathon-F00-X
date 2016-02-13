@@ -84,3 +84,79 @@ insert into causa(id_Causa,designacao)
 insert into doenca_causa(doenca,causa)
 	values(9,1),(45,2),(19,3); 
  delete from doenca_causa;
+ 
+ 
+ insert into prevencao(id_prevencao,descricao)
+		values(1,'Doença Cardíaca Alimentação saudável com pouco sal, açucar e pouca gordura. Prática de exercício físico'),
+        (2,'Gastroenterite Lavar as mãos cuidadosamente, lavagem das frutas e vegetais antes do consumo. Conservação adequada
+        dos alimentos'),
+        (3,'Otite Prevenir gripes, evitar fumo passivo, lavar as mãos frequentemente. Em caso de bebés, evitar dar a chupeta, fazer a
+        mamentação e discotir possível vacinação com o médico'),
+        (4,'Amigdalite Lavar as mãos frequantemente, evitar compartilhar itens de uso pessoal como por exemplo talheres e escovas de dentes.
+        Preoteger-se do frio e mudanças de temperatura'),
+        (5,'Cirrose Moderar o consumo de álcool e prevenir a aquisição da hepatite'),
+        (6,'Hepatite Moderar o consumo de álcool e outras substâncias tóxicas (remédios), evitar comportamentos sexuais de risco, melhorar condições
+        de saneamento básico e higiene, vacinação, não compartilhae lâminas de barbear e escovas de dentes, triagem dos bancos de sangue e centrais de
+        doação de sêmen, de modo a evitar a distribuição de material infetado'),
+        (7,'Pneumonia Lavar as mãos com frequência, não fumar, vacinação'),
+        (8,'Cálculo Biliar Não saltar refeições, manter um peso saudável, evitar perdas de peso bruscas'),
+        (9,'Cálculo Renal Beber muita água durante o dia, evitar comidas ricas em oxalato (espinafres, nozes, batata doce e espinafre), reduzir quantidades
+        de sal e proteínas nas refeições e manter níveis de cálcio no sangue estáveis'),
+        (10,'Hérnia Utilizar técnicas correctas de levantamento de pesos, emagrecer no caso de excesso de peso, aliviar ou evitar constipação
+        comendo alimentos ricos em fibras e bebendo muitos líquidos'),
+        (11,'Catarata Fazer exames oftalmológicos regualares, parar de fumar, reduzir o consumo de álcool, usar óculos de sol, monitorizar a glaucoma e diabetes,
+        manter o peso ideal e manter uma dieta saudável'),
+        (12,'Anemia Fazer uma alimentação rica em ferro, cozinhar em panelas de ferro, ingerir vitamina C em abundancia, tomar suplementos de ferro,
+        evitar certos medicamentos, comer alimentos com vitamina B12'),
+        (13,'Enxaqueca Evitar stress e ansiedade, identificar situações que desencadeiam a enxaqueca e evitá-los'),
+        (14, 'Febre Tifóide Ferver ou filtar a água antes do consumo, prevenir-se com higiene pessoal e saneamento básico, preparação adqueada dos
+        alimentos e vacianção'),
+        (15,'Poliomielite Vacinação'),
+        (16,'Bronquite Não fumar, vacinação, reduzir exposição à poluição e agentes químicos que possam irritar os pulmões e lavar as mãos frequantemtente'),
+        (17,'Cancro da Mama Adoção de hábitos saudáveis e realizar exames de rastreio'),
+        (18,'Cancro da próstata Realização do toque retal e dosagem do PSA a todos os homens acima dos 50 anos. Para aqueles com historial familiar com cancro
+        da próstata, recomenda-se realização desses exames a partir dos 45 anos. Alimentação saudável, não fumar, ser fisicamente ativo e visitar regularmente
+        o médico'),
+        (19,'Cistite Beber mais água e outros líquidos, esvaziar toda a bexiga no acto de urinar, urinar imediatamente após a relação sexual, evitar uso de preservativos
+        revestidos com espermicida'),
+        (20,'Dengue Tentar evitar focos de reprodução dos mosquito Aedes Aegypti, evitando acumulação de água e colocando areia nos vasos de plantas'),
+        (21,'Diabetes Manter o peso normal, não fumar, controlar a pressão arterial, evitar medicamentos que agridam o pâncreas e praticar atividade 
+        física regularmente'),
+        (22,'Ejaculação Precoce Comunicação aberta entre os parceiros, evitar pressões psicológicas'),
+        (23,'Esclerose Múltipla Não é possível prevenir. No entanto o diagnóstico precoce pode facilitar conviver com a doença'),
+        (24,'Febre Reumática Tratar infeções de garganta causadas pela bacteria do estreptococo'),
+        (25,'Glaucoma Diagnóstico precoce e cuidados meticulosos com a doença são essenciais para prevenir a cegueira. Realização de exames de prevençao'),
+        (26,'Gripe Vacinação, evitar mudanças de temperatura e lavar muitas vezes as mãos'),
+        (27,'Hipertensão Evitar o sedentarismo, evitar bebidas alcoólicas, tentar levar uma vida tranquila, manter o peso saudável, ter uma alimentação equilibrada, diminuir
+        a quantidade de sal'),
+        (28,'Hipotireoidismo Não existe meios de prevenção. Realizar testes de rotina'),
+        (29, 'HIV Uso de preservativo durante a relação sexual, evitar partilhar seringas e agulhas'),
+        (30,'Imputência Realizar exercício físico com regularidade, boa alimentação, dormir bem, evitar stress e moderar o consumo de alcoól'),
+        (31,'Leucemia Evitar exposição à radiação ionizante, controlar a dose de alguns agentes quimioterápicos, evitar exposição ao benzeno'),
+        (32,'Meningite Evitar contacto com pessoas contagiadas, lavar sempre as mãos, não compartilhar itens de uso pessoal, permanecer saudável 
+        com sistema imunológico a funcionar correctamente, tapar a boca ao tossir ou espirrar'),
+        (33,'Osteoprose Seguir uma dieta equilibrada com as quantidades de cálcio e vitamina D adequadas, evitar consumo de alcoól em excesso, não fumar, praticar exercício
+        físico regularmente, fazer reposição hormonal quando indicado e fazer densitometria óssea anualmente a partir dos 50 anos'),
+        (34,'Parkinson Não há tratamento preventivo'),
+        (35,'Prostatite Hábitos de higiene corretos, usar preservativos e limitar o numero de parceiros sexuais, dieta equilibrada, exercício físico regular e visita regular
+        ao médico'),
+        (36,'Sarampo Vacinação e evitar contacto com pessoas infetadas'),
+        (37,'Sífilis Limitar o número de parceiros sexuais, usar preservativo'),
+        (38,'Sinusite Manter a mucosa nasal hidratada, tratar rinite alérgica, manter uma alimentação saudável, evitar o jejum, beber água, lavar as mãos, fazer testes paras 
+        as alergias, ser vacinado contra a gripe, evitar cheiros fortes, agasalhar-se, não fumar, praticar exercício físico'),
+        (39,'Tétano Vacinação, limpar bem todas a feridas e ferimentos e reomover tecidos mortos ou muito danificados'),
+        (40,'Transtorno dissociativo de indentidade Evitar cenários problemáticos familiares e reconhecimento dos traços da doença o mais cedo possível'),
+        (41,'Doença de Fabry Não existe prevenção. Deve realizar exames regulares de modo a haver um diagnóstico precoce'),
+        (42,'Sídrome de Doege-Potter Não existe prevenção. Deve realizar exames regulares de modo a haver um diagnóstico precoce'),
+        (43,'Sídrome de Von Hippel Lindau Não existe prevenção. Deve realizar exames regulares de modo a haver um diagnóstico precoce'),
+        (44,'Sídrome de Munchausen Não existe prevenção. Deve realizar exames regulares de modo a haver um diagnóstico precoce'),
+        (45,'Sexomnia Não existe prevenção'),
+        (46,'Zika Tentar evitar focos de reprodução dos mosquito Aedes Aegypti, evitando acumulação de água e colocando areia nos vasos de plantas, usar repelentes'),
+        (47,'Alzheimer Fazer diariamente jogos de estratégia, praticar 30 minutos de exercício por dia, adoptar uma dieta mediterrânea, beber uma taça de vinho tinto por dia,
+        dormir 8 horas por noite e manter a pressão arterial controlada'),
+        (48,'Asma Emcapar colchões e travesseiros, lavar semanalmente as roupas da cama, retirar cortinas, tapetes e carpetes, evitar animais domésticos e promover a ventilação do ambiente'),
+        (49,'Anorexia reduzir os factores de stress, sentir-se bem psicologicamente, conciliar o descanso com a escola/trabalho, desenvolver amizades, cultivar
+        uma imagem positiva do corpo, ter conhecimento e hábitos alimentares saudáveis'),
+        (50,'Botulismo Dieta equilibrada e bem preparada, com alimentos em bom estado de conservação, manter a higiene na cozinha'),
+        (51,'Cacro do Estomago Hábitos alimentares saudáveis, evitar consumo de tabaco'),
+        (52, 'Cancro dos pulmões Evitar fumar e frequentar ambientes de fumo, evitar substâncias com beta-caroteno');
