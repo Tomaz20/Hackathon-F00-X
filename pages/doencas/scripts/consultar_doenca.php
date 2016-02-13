@@ -16,7 +16,7 @@
 
 	$qstring = "SELECT * FROM Causa AS c
 				INNER JOIN Doenca_Causa AS dc
-				ON c.causa_id=dc.causa 
+				ON c.id_Causa=dc.causa 
 				WHERE doenca = ".$_REQUEST['id'];
 	$causas = $dbh->query($qstring);
 
@@ -30,7 +30,7 @@
 	
 	$qstring = "SELECT * FROM Prevencao AS p
 				INNER JOIN Doenca_Prevencao AS dp
-				ON p.id_prevencao=dt.prevencao
+				ON p.id_prevencao=dp.prevencao
 				WHERE doenca = ".$_REQUEST['id'];
 	$prevencoes = $dbh->query($qstring);
 
@@ -61,7 +61,7 @@
 		echo "<li>".$causa['designacao']."</li>";
 	}
 
-	echo "<\ul>";
+	echo "</ul>";
 
 	echo "<hr/>";
 
@@ -73,7 +73,7 @@
 		echo "<li>".$tratamento['descricao']."</li>";
 	}
 
-	echo "<\ul>";
+	echo "</ul>";
 
 	echo "<hr/>";
 
@@ -85,7 +85,7 @@
 		echo "<li>".$prevencao['descricao']."</li>";
 	}
 
-	echo "<\ul>";
+	echo "</ul>";
 	
 	
 ?>
