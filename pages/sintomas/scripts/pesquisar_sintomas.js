@@ -16,8 +16,8 @@ $(function(){
 		
 		divSint.setAttribute("class", "form-group");
 		
-		var labelSint = document.createElement('label');
-		$(labelSint).append("Sintoma");
+		//var labelSint = document.createElement('label');
+		//$(labelSint).append("Sintoma");
 		
 		var selectSint = document.createElement('select');
 		
@@ -28,7 +28,7 @@ $(function(){
 		
 		$(selectSint).append(options);
 		
-		divSint.appendChild(labelSint);
+		//divSint.appendChild(labelSint);
 		divSint.appendChild(selectSint);
 		
 		novoSintoma.appendChild(divSint);
