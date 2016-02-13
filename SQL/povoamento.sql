@@ -178,10 +178,14 @@ insert into tratamento(id_Tratamento,descricao)
                          entre outros. Não é recomendável a auto-medicação devendo ser seguidas as recomendações do médico'),
 						 (8,'Cálculo biliar Há a opção cirurgica. Medicamentos como: aminofilina, buscopan composto, clocef, ceftriaxona sódica e escopolamina.
                          Não é recomendável a auto-medicação devendo ser seguidas as recomendações do médico'),
-						 (9,''),
-						 (10,''),
-						 (11,''),
-						 (12,''),
+						 (9,'Cálculo Renal Beber muita água pois ajuda a eliminar as pedras por meio da urina, analgésicos para a dor provocada pelo cálculo renal. No entanto quando as pedras são grandes os procedimentos são:
+                         litotripsia, traqueostomia percutânea, ureteroscopia e cirurgia de glândulas paratireoides. Medicamentos como: alopurinol, ceftriaxona dissódica, ceftriaxona Sódica, clortalidona, cystex.
+                         Não é recomendável a auto-medicação devendo ser seguidas as recomendações do médico'),
+						 (10,'Hérnia Cirurgia tradicional (único tratamento que pode corrigir permanentemente uma hérnia), cirurgia laparoscópica (consiste na inserção de uma pequena câmera por pequenos cortes cirúrgicos).
+                         Medicamentos por: O médico poderá receitar, também, alguns analgésicos para aliviar a dor. Não é recomendável a auto-medicação devendo ser seguidas as recomendações do médico.'),
+						 (11,'Catarata Cirurgia de catarata, é o único método eficaz para tratar a perda de visão causada pela catarata. Medicamentos por: colírios (gotas oculares aumentam a quantidade de luz que entra no olho).
+                         Não é recomendável a auto-medicação devendo ser seguidas as recomendações do médico'),
+						 (12,'Anemia Medicamentos por: combiron, combiron fólico, hemogenin, neutrofer, entre outros.Não é recomendável a auto-medicação devendo ser seguidas as recomendações do médico '),
 						 (13,''),
 						 (14,''),
 						 (15,''),
