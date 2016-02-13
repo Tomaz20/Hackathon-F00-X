@@ -1,14 +1,10 @@
 $(function(){
 
-	$("#nalunos").load("pages/inicio/scripts/nalunos.php");
+	$("#ntratamentos").load("pages/inicio/scripts/ntratamentos.php");
 
-	$("#nprofs").load("pages/inicio/scripts/nprofs.php");
+	$("#ncausas").load("pages/inicio/scripts/ncausas.php");
 
-	$("#ncursos").load("pages/inicio/scripts/ncursos.php");
+	$("#nprevencao").load("pages/inicio/scripts/nprevencao.php");
 
-	$("#naudicoes").load("pages/inicio/scripts/naudicoes.php");
-
-	$("#top_auds").load("pages/inicio/scripts/top_auds.php");
-
-	$("#stats").load("pages/inicio/scripts/stats.php");
+	//$("#stats").load("pages/inicio/scripts/stats.php");
 });
