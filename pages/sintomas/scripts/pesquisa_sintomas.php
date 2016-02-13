@@ -15,7 +15,7 @@
 
 	$qstring .= ")
 		GROUP BY id_doenca) AS b
-	WHERE b.nsintomas=".$_GET['ns'];
+	WHERE b.nsintomas=".($_GET['ns']+1);
 	
 
 	alert $qstring;
