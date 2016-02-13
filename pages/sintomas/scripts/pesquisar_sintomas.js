@@ -42,4 +42,8 @@ $(function(){
 			nsintomas--;
 		}
 	}); 
+
+	$("#remsintoma").click(function(){
+		$("#tab_doencas").load("scripts/pesquisa_sintomas.php?ns="+nsintomas);
+	});
 }); 
